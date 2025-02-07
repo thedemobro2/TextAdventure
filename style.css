@@ -1,0 +1,12 @@
+#game-container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#story-text {
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
