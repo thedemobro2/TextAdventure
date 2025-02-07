@@ -1,12 +1,63 @@
-#game-container {
-    width: 600px;
-    margin: 0 auto;
+body {
+    font-family: monospace; /* A classic font for text adventures */
+    background-color: #222; /* Dark background */
+    color: #eee; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make sure the content takes up full viewport height */
+    margin: 0;
     padding: 20px;
-    border: 1px solid #ccc;
+}
+
+#game-container {
+    background-color: #333; /* Slightly lighter background for the container */
+    padding: 20px;
+    border: 2px solid #555; /* Add a border */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Set a maximum width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
 }
 
 #story-text {
-    height: 200px;
+    background-color: #444; /* Even lighter background for the text area */
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    height: 300px; /* Increased height */
     overflow-y: scroll;
     margin-bottom: 10px;
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
+}
+
+button {
+    background-color: #666; /* Button background */
+    color: #eee; /* Button text color */
+    border: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #888; /* Darker background on hover */
+}
+
+input[type="text"] {
+    background-color: #444;
+    color: #eee;
+    border: 1px solid #666;
+    padding: 8px;
+    border-radius: 5px;
+    width: calc(100% - 20px); /* Make the input take full width */
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #aaa; /* Highlight border on focus */
 }
